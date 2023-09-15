@@ -1,0 +1,23 @@
+---
+title: 1주차 과제
+date: 2023-09-10
+author: 20234912 김보라
+---
+### 2번문제
+```{r}
+weight<-c(60,72,57,90,95,72) 
+mean(weight)
+```
+
+### 3번문제
+```{r}
+mean(weight,trim=0.2) #총 20%의 데이터를 양쪽 끝에서 제외함
+mean(c(60,72,90,72))
+```
+
+### 4번문제
+```{r}
+weight<-c(60,72,57,90,95,NA,72) #NA=Not Available
+mean(weight, na.rm=TRUE) #na.rm=nan remove
+mean(weight, na.rm=FALSE)
+```

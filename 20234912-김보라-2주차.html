@@ -9,11 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="20234912 김보라" />
 
-<meta name="date" content="2023-09-08" />
+<meta name="date" content="2023-09-15" />
 
-<title>1주차 연습</title>
+<title>2주차 과제_20234912 김보라</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,22 +349,61 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">1주차 연습</h1>
-<h4 class="author">20234912 김보라</h4>
-<h4 class="date">2023-09-08</h4>
+<h1 class="title toc-ignore">2주차 과제_20234912 김보라</h1>
+<h4 class="date">2023-09-15</h4>
 
 </div>
 
 
-<div id="파이" class="section level5">
-<h5>파이</h5>
-<pre class="r"><code>cat(&quot;pi는&quot;,pi,&quot;다.&quot;)</code></pre>
-<pre><code>## pi는 3.141593 다.</code></pre>
+<div id="a" class="section level2">
+<h2>2-1 A)</h2>
+<pre class="r"><code>x&lt;-seq(1,30)
+mean(x)</code></pre>
+<pre><code>## [1] 15.5</code></pre>
 </div>
-<div id="그냥" class="section level1">
-<h1>그냥</h1>
-<pre class="r"><code>print(&quot;hello world&quot;)</code></pre>
-<pre><code>## [1] &quot;hello world&quot;</code></pre>
+<div id="b" class="section level2">
+<h2>2-1 B)</h2>
+<pre class="r"><code>sum((x-mean(x))**2)/(length(x)-1)</code></pre>
+<pre><code>## [1] 77.5</code></pre>
+<pre class="r"><code>var(x)</code></pre>
+<pre><code>## [1] 77.5</code></pre>
+</div>
+<div id="section" class="section level2">
+<h2>2-2</h2>
+<pre class="r"><code>score&lt;-c(80,70,60,50,90,75,20,45,100,95)
+mean(score)</code></pre>
+<pre><code>## [1] 68.5</code></pre>
+<pre class="r"><code>var(score)</code></pre>
+<pre><code>## [1] 628.0556</code></pre>
+<pre class="r"><code>median(score)</code></pre>
+<pre><code>## [1] 72.5</code></pre>
+</div>
+<div id="a-1" class="section level2">
+<h2>2-3 A)</h2>
+<pre class="r"><code>mul=2^12
+mul%/%3</code></pre>
+<pre><code>## [1] 1365</code></pre>
+<pre class="r"><code>mul%%3</code></pre>
+<pre><code>## [1] 1</code></pre>
+</div>
+<div id="b-1" class="section level2">
+<h2>2-3 B)</h2>
+<pre class="r"><code>a=seq(from=1, to=5, by=0.1)
+b=round(sqrt(a),1)</code></pre>
+</div>
+<div id="a-2" class="section level2">
+<h2>2-4 A)</h2>
+<pre class="r"><code>a&lt;-seq(1,5)
+b&lt;-seq(3,10)
+a %in% b</code></pre>
+<pre><code>## [1] FALSE FALSE  TRUE  TRUE  TRUE</code></pre>
+</div>
+<div id="b-2" class="section level2">
+<h2>2-4 B)</h2>
+<pre class="r"><code>va&lt;-function(x) sum((x-mean(x))**2)/(length(x))
+a&lt;-c(1,3,5,7,9)
+va(a)</code></pre>
+<pre><code>## [1] 8</code></pre>
 </div>
 
 

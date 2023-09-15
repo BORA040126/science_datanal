@@ -11,9 +11,9 @@
 
 <meta name="author" content="20234912 김보라" />
 
-<meta name="date" content="2023-09-08" />
+<meta name="date" content="2023-09-10" />
 
-<title>1주차 연습</title>
+<title>1주차 과제</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,22 +350,33 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">1주차 연습</h1>
+<h1 class="title toc-ignore">1주차 과제</h1>
 <h4 class="author">20234912 김보라</h4>
-<h4 class="date">2023-09-08</h4>
+<h4 class="date">2023-09-10</h4>
 
 </div>
 
 
-<div id="파이" class="section level5">
-<h5>파이</h5>
-<pre class="r"><code>cat(&quot;pi는&quot;,pi,&quot;다.&quot;)</code></pre>
-<pre><code>## pi는 3.141593 다.</code></pre>
+<div id="번문제" class="section level3">
+<h3>2번문제</h3>
+<pre class="r"><code>weight&lt;-c(60,72,57,90,95,72) 
+mean(weight)</code></pre>
+<pre><code>## [1] 74.33333</code></pre>
 </div>
-<div id="그냥" class="section level1">
-<h1>그냥</h1>
-<pre class="r"><code>print(&quot;hello world&quot;)</code></pre>
-<pre><code>## [1] &quot;hello world&quot;</code></pre>
+<div id="번문제-1" class="section level3">
+<h3>3번문제</h3>
+<pre class="r"><code>mean(weight,trim=0.2) #총 20%의 데이터를 양쪽 끝에서 제외함</code></pre>
+<pre><code>## [1] 73.5</code></pre>
+<pre class="r"><code>mean(c(60,72,90,72))</code></pre>
+<pre><code>## [1] 73.5</code></pre>
+</div>
+<div id="번문제-2" class="section level3">
+<h3>4번문제</h3>
+<pre class="r"><code>weight&lt;-c(60,72,57,90,95,NA,72) #NA=Not Available
+mean(weight, na.rm=TRUE) #na.rm=nan remove</code></pre>
+<pre><code>## [1] 74.33333</code></pre>
+<pre class="r"><code>mean(weight, na.rm=FALSE)</code></pre>
+<pre><code>## [1] NA</code></pre>
 </div>
 
 

@@ -1,9 +1,14 @@
 ---
-editor_options: 
-  markdown: 
-    wrap: 72
+title: 1주차 연습
+author: 20234912 김보라
+date: 2023-09-08
 ---
-## 파이
+##### 파이
 ```{r}
 cat("pi는",pi,"다.")
+```
+
+# 그냥
+```{r}
+print("hello world")
 ```

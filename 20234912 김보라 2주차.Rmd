@@ -1,0 +1,45 @@
+---
+title: "2주차 과제_20234912 김보라"
+output: html_document
+date: "2023-09-15"
+---
+## 2-1 A)
+```{r}
+x<-seq(1,30)
+mean(x)
+```
+## 2-1 B)
+```{r}
+sum((x-mean(x))**2)/(length(x)-1)
+var(x)
+```
+## 2-2
+```{r}
+score<-c(80,70,60,50,90,75,20,45,100,95)
+mean(score)
+var(score)
+median(score)
+```
+## 2-3 A)
+```{r}
+mul=2^12
+mul%/%3
+mul%%3
+```
+## 2-3 B)
+```{r}
+a=seq(from=1, to=5, by=0.1)
+b=round(sqrt(a),1)
+```
+## 2-4 A)
+```{r}
+a<-seq(1,5)
+b<-seq(3,10)
+a %in% b
+```
+## 2-4 B)
+```{r}
+va<-function(x) sum((x-mean(x))**2)/(length(x))
+a<-c(1,3,5,7,9)
+va(a)
+```
